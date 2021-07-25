@@ -1,3 +1,9 @@
 function Cat() {
-    console.log("Hello World!");
+    this.stomach = [];
 }
+
+Cat.prototype.eat = function(mouse) {
+    this.stomach.push(mouse);
+}
+
+module.exports  = Cat;
